@@ -1,6 +1,9 @@
-<%= link_to "Edit", edit_blog_post_path(@blog_post) if user_signed_in? %>
-
 <h1> <%= @blog_post.title %> </h1>
 <%= @blog_post.content %>
 
-<%= link_to "Index", blog_posts_path %>
+<p>
+  <%= link_to "Edit", edit_blog_post_path(@blog_post) if user_signed_in? %>
+</p>
+<p>
+  <%= link_to "Index", blog_posts_path %>
+</p>
